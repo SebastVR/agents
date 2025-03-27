@@ -1,0 +1,25 @@
+networks:
+    agents:
+        driver: bridge
+
+services:
+
+    app-agents:
+        container_name: app-agents
+        build:
+            context: .
+            dockerfile: Dockerfile
+        env_file:
+            - ./app/.env.dev
+        volumes:
+            - .:/app
+        networks:
+            - agents
+        ports:
+            - '82:80'
+    # vllm:
+    #     image: vllm/vllm-openai:latest
+    #     ports:
+    #         - "8000:8000"
+    #     environment:
+    #         - MODEL_NAME=mistralai/Mistral-7B-Instruct-v0.1

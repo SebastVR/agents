@@ -1,0 +1,33 @@
+aiobotocore>=2.15,<3
+boto3>=1.35,<2
+botocore>=1.35,<2
+email-validator>=2.2.0,<3
+fastapi>=0.112.2,<1.0
+psycopg2 >=2.9.9, <3
+pydantic>=2.8.2,<3.0
+pydantic-settings>=2.4,<3.0
+pyodbc==5.1.0
+pytest-httpx==0.30.0
+python-jose>=3.3,<4.0
+python-multipart==0.0.9
+requests >= 2.31, <3
+s3fs==2024.3.1
+uvicorn[standard]==0.23.0
+SQLAlchemy>=2.0.37,<3.0
+sqlserverport==1.0.1
+ipython >=8.26.0,<9.0
+
+
+llama-index==0.12.25
+llama-index-llms-huggingface-api==0.4.1
+llama-index-embeddings-huggingface==0.5.2
+
+# litellm==1.64.1
+
+langchain==0.3.21
+langchain-community==0.3.20
+openai==1.68.2
+crewai==0.108.0
+crewai-tools==0.38.1
+python-docx==1.1.2
+docx==0.2.4
